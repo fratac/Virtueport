@@ -1,56 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<install type="component" version="1.5.0" method="upgrade">
-  <name>VirtuePort</name>
-  <author>Francesco Tacconi francescotacconi.it</author>
-  <creationDate>25/07/2012</creationDate>
-  <license>GNU/GPL</license>
-  <version>1.1</version>
-  <description>VirtuePort - Virtuemart Export</description>
-
-  <!-- administration part -->
-  <administration>
-    <menu task="default" img="js/ThemeOffice/component.png">VirtuePort</menu>
-    <submenu>
-      <menu link="option=com_virtueport&amp;view=dashboard">Dashboard</menu>
-      <menu link="option=com_virtueport&amp;view=exportrss">Export to RSS</menu>
-      <menu link="option=com_virtueport&amp;view=exportxml">Export to Google Mechants</menu>
-	  <menu link="option=com_virtueport&amp;view=exportebay">Export to Ebay</menu>
-	  <menu link="option=com_virtueport&amp;view=exportyatego">Export to Yatego</menu>
-      <menu link="option=com_virtueport&amp;view=config">Configuration</menu>
-    </submenu>
-
-    <files>
-      <filename>virtueport.xml</filename>
-      <filename>install.sql</filename>
-      <filename>uninstall.sql</filename>
-    </files>
-
-    <files>
-      <filename>controller.php</filename>
-      <filename>index.html</filename>
-      <filename>virtueport.php</filename>
-      <folder>models</folder>
-      <folder>tables</folder>
-      <folder>views</folder>
-      <folder>images</folder>
-      <folder>controller</folder>
-    </files>
-
-  </administration>
-
-  <install>
-    <sql>
-      <file driver="mysql" charset="utf8">install.sql</file>
-    </sql>
-  </install>
-
-  <uninstall>
-    <sql>
-      <file driver="mysql" charset="utf8">uninstall.sql</file>
-    </sql>
-  </uninstall>
-
-  <params></params>
-
-</install>
+<?xml version="1.0" encoding="utf-8"?><install type="component" version="1.5.0" method="upgrade">  <name>VirtuePort</name>  <author>Francesco Tacconi francescotacconi.it</author>  <creationDate>25/07/2012</creationDate>  <license>GNU/GPL</license>  <version>0.2</version>  <description>VirtuePort - Export Virtuemart Products</description>  <!-- administration part -->  <administration>    <menu task="default" img="js/ThemeOffice/component.png">VirtuePort</menu>    <submenu>      <menu link="option=com_virtueport&amp;view=dashboard">Dashboard</menu>      <menu link="option=com_virtueport&amp;view=exportrss">Export to RSS</menu>      <menu link="option=com_virtueport&amp;view=exportxml">Export to Google Mechants</menu>	  <menu link="option=com_virtueport&amp;view=exportebay">Export to Ebay</menu>	  <menu link="option=com_virtueport&amp;view=exportyatego">Export to Yatego</menu>      <menu link="option=com_virtueport&amp;view=config">Configuration</menu>    </submenu>    <files>      <filename>virtueport.xml</filename>      <filename>install.sql</filename>      <filename>uninstall.sql</filename>      <filename>controller.php</filename>      <filename>index.html</filename>      <filename>virtueport.php</filename>      <folder>models</folder>      <folder>tables</folder>      <folder>views</folder>      <folder>images</folder>      <folder>controller</folder>    </files>  </administration>  <install>    <sql>      <file driver="mysql" charset="utf8">install.sql</file>    </sql>  </install>  <uninstall>    <sql>      <file driver="mysql" charset="utf8">uninstall.sql</file>    </sql>  </uninstall>  <params></params></install>
