@@ -29,7 +29,7 @@ defined('_JEXEC') or die('Restricted access');
         <div style="float:left;">
 			<div class="icon">
 				<a href="index.php?option=com_virtueport&amp;view=exportxml">
-					<img src="components/com_virtueport/images/txt.png" alt="Esporta in XML"><span><?php echo JText::_('XML') ?></span></a>
+					<img src="components/com_virtueport/images/xml.png" alt="Esporta in XML"><span><?php echo JText::_('XML') ?></span></a>
 			</div>
 		</div>
         <div style="float:left;">
