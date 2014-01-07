@@ -11,8 +11,14 @@ jimport('joomla.application.component.view');
 class VirtuePortViewexportrss extends JView
 {
 	function display($tpl = null)
-	 {		$doc =& JFactory::getDocument();        $style = " .icon-48-google-merchant {background-image:url(components/com_virtueport/images/google-merchant.png); no-repeat; }";        $doc->addStyleDeclaration( $style ); 		JToolBarHelper::title(JText::_( 'Google Base : RSS'),'google-merchant.png');				$text = JText::_('EXPORT');		JToolBarHelper::save('rss',$text);		JToolBarHelper::cancel();	 				
-		parent::display($tpl);
+	 {
+            $doc =& JFactory::getDocument();
+            $doc->addStyleSheet('components/com_virtueport/assets/css/virtueport.css');
+            JToolBarHelper::title(JText::_( 'Google Base : RSS'),'rss.png');
+            $text = JText::_('EXPORT');
+            JToolBarHelper::save('rss',$text);
+            JToolBarHelper::cancel();
+            parent::display($tpl);
 }
            
 

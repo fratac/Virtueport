@@ -11,11 +11,17 @@ jimport('joomla.application.component.view');
 class VirtuePortViewexportxml extends JView
 {
 	function display($tpl = null)
-	 {	 $doc =& JFactory::getDocument();        $style = " .icon-48-google-merchant {background-image:url(components/com_virtueport/images/google-merchant.png); no-repeat; }";        $doc->addStyleDeclaration( $style ); 		JToolBarHelper::title(JText::_( 'Google Base: XML '),'google-merchant.png');				$text = JText::_('EXPORT');
-		JToolBarHelper::save('load',$text);		JToolBarHelper::cancel();  		parent::display($tpl);
-}
-           
+	 {
+            $doc =& JFactory::getDocument();
+            $doc->addStyleSheet('components/com_virtueport/assets/css/virtueport.css');
+            $style = " .icon-48-google-merchant {background-image:url(components/com_virtueport/images/xml.png); no-repeat; }";
+            $doc->addStyleDeclaration( $style );
+            JToolBarHelper::title(JText::_( 'Google Merchant: XML '),'xml.png');
+            $text = JText::_('EXPORT');
+            JToolBarHelper::save('load',$text);
+            JToolBarHelper::cancel();
+            parent::display($tpl);
+    }
 
-	
 }
 ?>

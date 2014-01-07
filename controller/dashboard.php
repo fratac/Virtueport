@@ -26,7 +26,7 @@ class VirtuePortControllerDashboard extends JController
 	    
  $doc =& JFactory::getDocument();
         
-		JToolBarHelper::title(JText::_( 'esporta'));
+	JToolBarHelper::title(JText::_( 'esporta'));
 	JToolBarHelper::divider();
 		
 	

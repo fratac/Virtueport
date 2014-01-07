@@ -13,9 +13,8 @@ class VirtuePortViewexportyatego extends JView
 	function display($tpl = null)
 	 {
 		$doc =& JFactory::getDocument();
-		$style = " .icon-48-google-merchant {background-image:url(components/com_virtueport/images/google-merchant.png); no-repeat; }";
-		$doc->addStyleDeclaration( $style );
-		JToolBarHelper::title(JText::_( 'Yatego.it '),'rss.png');
+                $doc->addStyleSheet('components/com_virtueport/assets/css/virtueport.css');
+		JToolBarHelper::title(JText::_( 'Yatego.it '),'yatego');
 		$text = JText::_('EXPORT');
 		JToolBarHelper::save('load',$text);
 		JToolBarHelper::cancel();

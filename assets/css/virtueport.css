@@ -1,0 +1,32 @@
+/*------------------------------------------------------------------------
+# VirtuePort
+# ------------------------------------------------------------------------
+# Copyright (C) 2011 Francesco Tacconi. All Rights Reserved.
+# Website: http://www.francescotacconi.it
+-------------------------------------------------------------------------
+*/
+
+.icon-48-virtueport_icon {
+    background:url(/administrator/components/com_virtueport/assets/images/virtueport_48.png) no-repeat;
+    background-size: 48px 48px;
+}
+.icon-48-rss {
+    background:url(/administrator/components/com_virtueport/assets/images/rss.png) no-repeat;
+    background-size: 48px 48px;
+}
+.icon-48-xml {
+    background:url(/administrator/components/com_virtueport/assets/images/xml.png) no-repeat;
+    background-size: 48px 48px;
+}
+.icon-48-ebay {
+    background:url(/administrator/components/com_virtueport/assets/images/csv.png) no-repeat;
+    background-size: 48px 48px;
+}
+.icon-48-yatego {
+    background:url(/administrator/components/com_virtueport/assets/images/csv.png) no-repeat;
+    background-size: 48px 48px;
+}
+.icon-48-easyfatt {
+    background:url(/administrator/components/com_virtueport/assets/images/csv.png) no-repeat;
+    background-size: 48px 48px;
+}

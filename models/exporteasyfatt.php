@@ -23,7 +23,7 @@ jimport('joomla.application.component.model');
 	}
 
 
-class VirtuePortModelexportebay extends JModel {
+class VirtuePortModelexporteasyfatt extends JModel {
 
 //protected $db;
     function __construct() {
@@ -60,26 +60,26 @@ class VirtuePortModelexportebay extends JModel {
  function changeAccented($text) {
 	 /*
 	 $replace = array(
-	 "Å " => "Š", "Å¡" => "š", "Å'" => "Œ", "Å" => "œ",
-	 "Å¸" => "Ÿ", "Ã¿" => "ÿ", "Ã€" => "À", "Ã " => "à",
-	 "Ã" => "Á", "Ã¡" => "á", "Ã‚" => "Â", "Ã¢" => "â",
-	 "Ãƒ" => "Ã", "Ã£" => "ã", "Ã„" => "Ä", "Ã¤" => "ä",
-	 "Ã…" => "Å", "Ã¥" => "å", "Ã†" => "Æ", "Ã¦" => "æ",
-	 "Ã‡" => "Ç", "Ã§" => "ç", "Ãˆ" => "È", "Ã¨" => "è",
-	 "Ã‰" => "É", "Ã©" => "é", "ÃŠ" => "Ê", "Ãª" => "ê",
-	 "Ã‹" => "Ë", "Ã«" => "ë", "ÃŒ" => "Ì", "Ã¬" => "ì",
-	 "Ã" => "Í", "Ã­" => "í", "ÃŽ" => "Î", "Ã®" => "î",
-	 "Ã" => "Ï", "Ã¯" => "ï", "Ã" => "Ð", "Ã°" => "ð",
-	 "Ã'" => "Ñ", "Ã±" => "ñ", "Ã'" => "Ò", "Ã²" => "ò",
-	 "Ã" => "Ó", "Ã³" => "ó", "Ã" => "Ô", "Ã´" => "ô",
-	 "Ã•" => "Õ", "Ãµ" => "õ", "Ã–" => "Ö", "Ã˜" => "Ø",
-	 "Ã¸" => "ø", "Ã™" => "Ù", "Ã¹" => "ù", "Ãš" => "Ú",
-	 "Ãº" => "ú", "Ã›" => "Û", "Ã»" => "û", "Ãœ" => "Ü",
-	 "Ã¼" => "ü", "Ã" => "Ý", "Ã½" => "ý", "Ãž" => "Þ",
-	 "Ã¾" => "þ", "ÃŸ" => "ß", "Ã¶" => "ö","Ô´"=>"ô",
-	 "Ô"=>"à","àÂ©"=>"é","Ã©"=>"é","àÂ”"=>"ô"
-	 ,"àÆ’ÂÂ©"=>"é","ÃƒÂ«"=>"è","àÂ¢"=>"â","HÃ´teliÃ©res"=>"Hôtelières"
-	 ,"ZAà?RE"=>"ZAIRE","Ã©"=>"é","û"=>"u","’"=>"-","Â²"=>"²","Â«" => "«","Â»" => "»"
+	 "ï¿½ " => "ï¿½", "Å¡" => "ï¿½", "ï¿½'" => "ï¿½", "ï¿½" => "ï¿½",
+	 "Å¸" => "ï¿½", "Ã¿" => "ï¿½", "Ã€" => "ï¿½", "ï¿½ " => "ï¿½",
+	 "Ã" => "ï¿½", "Ã¡" => "ï¿½", "Ã‚" => "ï¿½", "Ã¢" => "ï¿½",
+	 "Ãƒ" => "ï¿½", "Ã£" => "ï¿½", "Ã„" => "ï¿½", "Ã¤" => "ï¿½",
+	 "Ã…" => "ï¿½", "Ã¥" => "ï¿½", "Ã†" => "ï¿½", "Ã¦" => "ï¿½",
+	 "Ã‡" => "ï¿½", "Ã§" => "ï¿½", "Ãˆ" => "ï¿½", "Ã¨" => "ï¿½",
+	 "Ã‰" => "ï¿½", "Ã©" => "ï¿½", "ÃŠ" => "ï¿½", "Ãª" => "ï¿½",
+	 "Ã‹" => "ï¿½", "Ã«" => "ï¿½", "ÃŒ" => "ï¿½", "Ã¬" => "ï¿½",
+	 "Ã" => "ï¿½", "Ã­" => "ï¿½", "ÃŽ" => "ï¿½", "Ã®" => "ï¿½",
+	 "Ã" => "ï¿½", "Ã¯" => "ï¿½", "Ã" => "ï¿½", "Ã°" => "ï¿½",
+	 "ï¿½'" => "ï¿½", "Ã±" => "ï¿½", "ï¿½'" => "ï¿½", "Ã²" => "ï¿½",
+	 "ï¿½" => "ï¿½", "Ã³" => "ï¿½", "ï¿½" => "ï¿½", "Ã´" => "ï¿½",
+	 "Ã•" => "ï¿½", "Ãµ" => "ï¿½", "Ã–" => "ï¿½", "Ã˜" => "ï¿½",
+	 "Ã¸" => "ï¿½", "Ã™" => "ï¿½", "Ã¹" => "ï¿½", "Ãš" => "ï¿½",
+	 "Ãº" => "ï¿½", "Ã›" => "ï¿½", "Ã»" => "ï¿½", "Ãœ" => "ï¿½",
+	 "Ã¼" => "ï¿½", "Ã" => "ï¿½", "Ã½" => "ï¿½", "Ãž" => "ï¿½",
+	 "Ã¾" => "ï¿½", "ÃŸ" => "ï¿½", "Ã¶" => "ï¿½","Ô´"=>"ï¿½",
+	 "ï¿½"=>"ï¿½","ï¿½Â©"=>"ï¿½","Ã©"=>"ï¿½","ï¿½Â”"=>"ï¿½"
+	 ,"ï¿½Æ’ï¿½Â©"=>"ï¿½","ÃƒÂ«"=>"ï¿½","ï¿½Â¢"=>"ï¿½","HÃ´teliÃ©res"=>"Hï¿½teliï¿½res"
+	 ,"ZAï¿½?RE"=>"ZAIRE","Ã©"=>"ï¿½","ï¿½"=>"u","ï¿½"=>"-","Â²"=>"ï¿½","Â«" => "ï¿½","Â»" => "ï¿½"
 	 );
 	*/
 	//"â€™"=>"'"
@@ -117,7 +117,7 @@ class VirtuePortModelexportebay extends JModel {
         return $return;
 	}
 	
-	function getexportebay(){
+	function getexporteasyfatt(){
 	//global $mainframe;
             
 	$subtitle_export = false; //Se true esporta sottotitolo, campo a pagamento
@@ -128,28 +128,15 @@ class VirtuePortModelexportebay extends JModel {
 	
 	define('URLSITE',dirname(JURI::base()),true);
 	
-	$filename = 'virtueport_ebay.csv';
+	$filename = 'virtueport_easyfatt.csv';
         
-	/*
-	$dbs	=& JFactory::getDBO();
-	$sqls= ' SELECT * From #__virtueport_config where id=\'1\' ';
-	$dbs->setQuery($sqls);
-	$results=$dbs->loadRow();
-        
-		$sitenameS=$results['1'];
-		$descS=$results['2'];
-         * 
-         */
+
 		
                 $url_site = $_SERVER['HTTP_HOST'];	
 						
-		//Ebay
-		$xml  ='Action;Category;StoreCategory;CustomLabel;Title;';
-		if ($subtitle_export) {
-			$xml .= 'Subtitle;';
-		}
-		$xml .= 'Description;ConditionID;PicURL;Quantity;Format;StartPrice;Duration;ImmediatePayRequired;Location;PayPalAccepted;PayPalEmailAddress;';
-		$xml .= 'ShippingService-1:Option;ShippingService-1:Cost;DispatchTimeMax;ReturnsAcceptedOption;HitCounter'."\n";
+		//$xml  ='"Cod.","Descrizione","Tipologia","Categoria","Sottocategoria","Cod. Udm","Cod. Iva","Listino 1","Listino 2","Formula listino 1","Formula listino 2","Note","Cod. a barre","Internet","Produttore","Descriz. web (Sorgente HTML)","Extra 1","Extra 2","Extra 3","Extra 4","Cod. fornitore","Fornitore","Cod. prod. forn.","Prezzo forn.","Note fornitura","Ord. a multipli di","Gg. ordine","Scorta min.","Ubicazione","Tot. q.tÃ  caricata","Tot. q.tÃ  scaricata","Q.tÃ  giacenza","Q.tÃ  impegnata","Q.tÃ  disponibile","Q.tÃ  in arrivo","Vendita media mensile","Stima data fine magazz.","Stima data prossimo ordine","Data primo carico","Data ultimo carico","Data ultimo scarico","Costo medio d\'acq.","Ultimo costo d\'acq.","Prezzo medio vend.","Stato magazzino","Immagine"';
+		$xml  ='"Cod.";"Descrizione";"Tipologia";"Categoria";"Sottocategoria";"Cod. Udm";"Cod. Iva";"Listino 1";"Note";"Internet";"Produttore";"Descriz. web (Sorgente HTML)";"Immagine"';
+                $xml .= "\n";
 		
                 $db	=& JFactory::getDBO();
 		$sql  = " SELECT DISTINCT * ";//p.product_id as pid, p.product_sku as sku, p.product_name as name, p.product_description as desc, pp.product_price as price, m.mf_name as mfname, ";
@@ -161,9 +148,12 @@ class VirtuePortModelexportebay extends JModel {
 		$sql .=" LEFT JOIN #__vm_product_price  ON #__vm_product_price.product_id = #__vm_product.product_id ";
 		$sql .=" LEFT JOIN #__vm_tax_rate ON #__vm_tax_rate.tax_rate_id = #__vm_product.product_tax_id ";
 		$sql .=" LEFT JOIN #__vm_product_category_xref ON #__vm_product_category_xref.product_id = #__vm_product.product_id ";
-		$sql .=" LEFT JOIN #__vp_export_cat ON #__vp_export_cat.vp_virtuemart_cat = #__vm_product_category_xref.category_id ";
-		$sql .=" where product_publish= \"Y\" and product_price IS NOT NULL AND vp_export_cat IS NOT NULL";
+                $sql .=" LEFT JOIN jos_vm_category ON jos_vm_category.category_id = jos_vm_product_category_xref.category_id";
+		//$sql .=" LEFT JOIN #__vp_export_cat ON #__vp_export_cat.vp_virtuemart_cat = #__vm_product_category_xref.category_id ";
+		//$sql .=" where product_publish= \"Y\" and product_price IS NOT NULL AND vp_export_cat IS NOT NULL";
+                //$sql .=" where product_publish= \"Y\" and product_price IS NOT NULL";
 		//$sql .=" and product_in_stock>0 "; 
+                $sql .= " ORDER BY jos_vm_product.product_id ";
                 //print $sql .' ';
 		$db->setQuery($sql);
 		//$products=$db->loadRowList();
@@ -172,9 +162,9 @@ class VirtuePortModelexportebay extends JModel {
 		if(empty($products)){die('Echec ...');}
 		
 		//if(!isset($product['6'])){$product['6']=10;}
-		$title_limit = 80;
-		$subtitle_limit = 55;
-		$description_limit = 5000;//10000 default
+		$title_limit = 200;
+		$subtitle_limit = 200;
+		$description_limit = 5000;
 		//dump($products, 'Prodotti');
 		//print_r($products);
 		foreach($products as $product)
@@ -182,6 +172,7 @@ class VirtuePortModelexportebay extends JModel {
         //print $product['product_name'].'<br> ';
 			//dump($product, 'product');
 			$urlProd = URLSITE . '/index.php?page=shop.product_details&amp;flypage=shop.flypage'.$flypage.'&amp;product_id='.$product['product_id'].'&amp;option=com_virtuemart&amp;Itemid=29';
+                        $imagePath = 'C:\Users\administrator\Documents\Danea Easyfatt\Archivi\Ryanails - Allegati\Prod';
 			$price = '';
 			
 			$my_taxrate = $product['tax_rate'];
@@ -317,49 +308,28 @@ class VirtuePortModelexportebay extends JModel {
 				//$description_max = substr($description_max, 0, strrpos($description_max," "));
 				$description_max = $this->strwrap($description_max, $description_limit, " ");
 			}
-//Action;Category;StoreCategory;CustomLabel;Title;Subtitle;Description;ConditionID;PicURL;Quantity;
-//Format;StartPrice;Duration;ImmediatePayRequired;Location;PayPalAccepted;PayPalEmailAddress;
-//ShippingService-1:Option;ShippingService-1:Cost;DispatchTimeMax;ReturnsAcceptedOption;HitCounter
-//"VerifyAdd";"132801";"Gel UV 15ml";"Gel UV sottotitolo";"Gel UV descrizione";"1000";"http://www.diamondnailstore.it/components/com_virtuemart/shop_image/product/Super_Pink_Gel_U_4fe56f01e5dfd.jpg";"10";"FixedPrice";"18.00";"7";"1";"Via XXIV Maggio 17, 19124 La Spezia";"1";"info@diamondnailstore.it";"IT_RegularPackage";"5.00";"1";"ReturnsAccepted";"HiddenStyle"
-			$xml .= '"VerifyAdd";'; //Action
-			$xml .= '"'.$product['vp_export_cat'].'";'; //Category
-			$xml .= '"'.$product['vp_export_cat2'].'";'; //StoreCategory
-			$xml .= '"'.$product['product_sku'].'";'; //CustomLabel
-			$xml .= '"'.$title_max.'";'; //Title
-			if ($subtitle_export) {
-				$xml .= '"'.$subtitle_max.'";'; //Subtitle
-			}
-			$xml .= '"'.$description_max.'";'; //Description
-			$xml .= '"1000";'; //ConditionID
-			$xml .= '"'.URLSITE.'/components/com_virtuemart/shop_image/product/'.$product['product_full_image'].'";'; //PicURL
-			//$xml .= '<link>'. URLSITE.'/index.php?page=shop.product_details&amp;flypage=shop.flypage='.$flypage.'&amp;product_id='.$product['product_id'].'&amp;option=com_virtuemart&amp;Itemid=29.</link>'."\n";
-			
-			$xml .= '"10";'; //Quantity
-			$xml .= '"FixedPrice";'; //Format
-			$xml .= '"'.$price.'";'; //StartPrice
-			$xml .= '"7";'; //Duration
-			$xml .= '"1";'; //ImmediatePayRequired
-			$xml .= '"Via XXIV Maggio 17, 19124 La Spezia";'; //Location
-			$xml .= '"1";'; //PayPalAccepted
-			$xml .= '"info@diamondnailstore.it";'; //PayPalEmailAddress
-			$xml .= '"IT_ExpressCourier";'; //ShippingService-1:Option
-			$xml .= '"5.00";'; //ShippingService-1:Cost
-			$xml .= '"1";'; //DispatchTimeMax
-			$xml .= '"ReturnsAccepted";'; //ReturnsAcceptedOption
-			$xml .= '"HiddenStyle"'; //ReturnsAcceptedOption
+//"Cod.","Descrizione","Tipologia","Categoria","Sottocategoria","Cod. Udm","Cod. Iva","Listino 1",
+//"Note","Internet","Produttore","Descriz. web (Sorgente HTML)","Immagine"';
 
-			//$dbcat	=& JFactory::getDBO();
-			//$sql2  = "SELECT category_name,category_flypage FROM #__vm_category ";
-			//$sql2 .= " LEFT JOIN #__vm_product_category_xref ON #__vm_category.category_id=#__vm_product_category_xref.category_id ";
-			//$sql2 .= " WHERE #__vm_product_category_xref.product_id='".$product['product_id']."' ";
-			//$dbcat->setQuery($sql2);
-			//$cat=$dbcat->loadRow();
-			//if(empty($cat)){die('Echec f...');}
-			//$categorie=$cat['0'];
-			//$flypage=$cat['1'];
-			//if($results['5'] != '0') {
-			//	$xml .= '<g:product_type>'.htmlspecialchars($this->getampers($categorie)).'</g:product_type>'."\n";
-			//}
+
+			$xml .= '"'.$product['product_sku'].'";'; //Cod.
+                        $xml .= '"'.$title_max.'";'; //Descrizione
+                        $xml .= '"Art. con magazzino";'; //Tipologia
+                        //$xml .= '"'.$product['category_id'].'";'; //Categoria
+                        $xml .= '"'.$product['category_name'].'";'; //Categoria
+                        //$xml .= '"'.$product['vp_export_cat2'].'";'; //Sottocategoria
+                        $xml .= '"";'; //Sottocategoria
+                        $xml .= '"nr";'; //Udm unita di misura
+                        $xml .= '"22";'; //UCod. Iva
+                        //$xml .= '"'.$price.'";'; //Listino 1
+                        $xml .= '"'.str_replace('.', ',', $price).'";';
+                        $xml .= '"'.$subtitle_max.'";'; //Note
+                        $xml .= '"'.URLSITE.'/index.php?page=shop.product_details&amp;flypage=shop.flypage='.$flypage.'&amp;product_id='.$product['product_id'].'&amp;option=com_virtuemart&amp;Itemid=29'.'";'; //Internet
+                        $xml .= '"'.$product['mf_name'].'";'; //Produttore
+                        $xml .= '"'.$description_max.'";'; //Descriz. web
+                        $xml .= '"'.$imagePath.$product['product_full_image'].'"'; //Immagine
+                        
+
 			
 			$xml .= "\n";
 	
